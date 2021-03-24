@@ -1,0 +1,36 @@
+.App {
+}
+
+.App-header {
+  background-color: #222;
+  height: 3em;
+  padding: 1em;
+  color: white;
+}
+
+.App-header ul {
+  display: flex;
+  padding: 0;
+}
+
+.App-header li {
+  list-style-type: none;
+  padding-right: 2em;
+}
+
+.App-header a {
+  text-decoration: none;
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+}
+
+.App-header a:hover {
+  color: #870505;
+}
+
+.title {
+  text-align: center;
+  font-size: 3em;
+  color: #b10000;
+}

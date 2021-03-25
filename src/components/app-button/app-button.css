@@ -1,0 +1,21 @@
+.app-button {
+  border: 1px solid #d8d8d8;
+  background: none;
+  border-radius: 25px;
+  padding: 12px 33px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 60px;
+  font-weight: bold;
+  outline: none;
+  transition: 0.15s;
+  margin-bottom: 40px;
+}
+.app-button:hover,
+.app-button:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.app-button svg {
+  padding-left: 5px;
+}

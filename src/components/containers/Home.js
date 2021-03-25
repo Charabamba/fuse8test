@@ -1,6 +1,9 @@
 import React from "react";
 import { connect } from "react-redux";
-import RenderItems from "../presentational/RenderItems";
+import AppTitle from "../app-title";
+import AppFilter from "../app-filter";
+import AppButton from "../app-button";
+import HouseList from "../house-list";
 
 class Home extends React.Component {
   constructor(props) {
@@ -15,25 +18,27 @@ class Home extends React.Component {
 
   render() {
     const { addOne } = this;
-    const { numbers } = this.props;
+    const { filter, houses } = this.props;
 
     return (
-      <div style={{ textAlign: "center" }}>
-        <h1 className="title">Welcome</h1>
-        <h3>Mapped state :</h3>
-        <button onClick={addOne}>
-          Add 1
-        </button>
-        <ul>
-          <RenderItems items={numbers} />
-        </ul>
+      <div>
+        <AppTitle title={"Our Latest Developments"} />
+        <AppFilter />
+        <HouseList
+          data={houses.filter((house) => {
+            return house.title
+              .toLowerCase()
+              .includes(filter.toString().toLowerCase());
+          })}
+        />
+        <AppButton buttonName={"See more"} />
       </div>
     );
   }
 }
 
 function mapStateToProps(state) {
-  return { numbers: state.numbers };
+  return { filter: state.filter, houses: state.houses };
 }
 
 export default connect(mapStateToProps)(Home);

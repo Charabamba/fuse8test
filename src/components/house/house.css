@@ -1,0 +1,63 @@
+.house-link {
+  display: block;
+  background: #f8f8f8;
+  border: 1px solid #d8d8d8;
+  color: #363636;
+  text-decoration: none;
+  outline: none;
+  transition: 0.15s;
+}
+.house-link:hover,
+.house-link:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.house-link__img-container {
+  position: relative;
+  height: 225px;
+}
+.house-link__img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.house-link__type {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  right: 0;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 8px 10px;
+  padding-bottom: 5px;
+  background: #006f79;
+}
+.house-link__type_alt {
+  background: #ec6608;
+}
+.house-link__info {
+  padding: 17px 20px;
+  text-align: left;
+}
+.house-link__title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+}
+.house-link__address {
+  font-size: 16px;
+  line-height: 22px;
+  padding-top: 2px;
+}
+.house-link__price {
+  font-size: 16px;
+  line-height: 22px;
+  padding-top: 15px;
+}
+.house-link__price span {
+  font-weight: bold;
+}
+.house-link__small-text {
+  font-size: 14px;
+  line-height: 19px;
+  padding-top: 7px;
+}

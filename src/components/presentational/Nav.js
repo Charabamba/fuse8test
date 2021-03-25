@@ -20,11 +20,6 @@ class Nav extends React.Component {
               Numbers list
             </NavLink>
           </li>
-          <li>
-            <NavLink exact activeStyle={{ color: " #b10000" }} to="/login">
-              Login
-            </NavLink>
-          </li>
         </ul>
       </div>
     );

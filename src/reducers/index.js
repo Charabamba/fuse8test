@@ -1,6 +1,8 @@
 import { combineReducers } from "redux";
-import numbers from "./numbers";
+import filter from "./filter";
+import houses from "./houses";
 
 export default combineReducers({
-  numbers
+  filter,
+  houses,
 });

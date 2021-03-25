@@ -1,0 +1,18 @@
+.house-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 22px;
+  grid-row-gap: 38px;
+  list-style-type: none;
+  padding-top: 45px;
+}
+@media (max-width: 1100px) {
+  .house-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 700px) {
+  .house-list {
+    grid-template-columns: 1fr;
+  }
+}

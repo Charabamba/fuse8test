@@ -30,6 +30,7 @@ class AppFilter extends React.Component {
             id="app-filter"
             type="text"
             value={filter}
+            autoComplete="off"
           />
         </div>
       </div>

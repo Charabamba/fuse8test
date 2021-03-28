@@ -6,18 +6,7 @@ import AppButton from "../app-button";
 import HouseList from "../house-list";
 
 class Home extends React.Component {
-  constructor(props) {
-    super(props);
-    this.addOne = this.addOne.bind(this);
-  }
-
-  addOne() {
-    const nextNumber = this.props.numbers.length + 1;
-    this.props.dispatch({ type: "ADD_NUMBER", number: nextNumber });
-  }
-
   render() {
-    const { addOne } = this;
     const { filter, houses } = this.props;
 
     return (
@@ -25,11 +14,15 @@ class Home extends React.Component {
         <AppTitle title={"Our Latest Developments"} />
         <AppFilter />
         <HouseList
-          data={houses.filter((house) => {
-            return house.title
-              .toLowerCase()
-              .includes(filter.toString().toLowerCase());
-          })}
+          data={
+            filter.toString().length < 3
+              ? houses
+              : houses.filter((house) => {
+                  return house.title
+                    .toLowerCase()
+                    .includes(filter.toString().toLowerCase());
+                })
+          }
         />
         <AppButton buttonName={"See more"} />
       </div>

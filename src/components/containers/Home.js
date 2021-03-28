@@ -15,7 +15,7 @@ class Home extends React.Component {
         <AppFilter />
         <HouseList
           data={
-            filter.toString().length < 3
+            filter.toString().length < 4
               ? houses
               : houses.filter((house) => {
                   return house.title

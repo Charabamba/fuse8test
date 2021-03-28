@@ -10,4 +10,4 @@ npm install
 npm start
 ```
 
-A browser window should open at [http://localhost:3000/](http://localhost:3000/). If not, you can go there to view your app<br>
+A browser window should open at [http://localhost:3000/fuse8test/](http://localhost:3000/fuse8test/). If not, you can go there to view your app<br>

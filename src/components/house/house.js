@@ -9,7 +9,7 @@ const House = ({ houseData }) => {
       className="house-link"
       exact
       activeStyle={{ color: " #b10000" }}
-      to={`/details/${houseData.id}`}
+      to={`/fuse8test/details/${houseData.id}`}
     >
       <div className="house-link__img-container">
         <img
